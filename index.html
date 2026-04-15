@@ -3,69 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sunpark Menu</title>
+
+  <title>San Park</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #0f0f10;
-      color: #fff;
+      font-family: 'Playfair Display', serif;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.5);
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      padding: 20px;
     }
 
     .container {
       text-align: center;
-      padding: 20px;
       max-width: 320px;
-      width: 100%;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 34px;
       margin-bottom: 10px;
-      letter-spacing: 1px;
     }
 
     p {
+      opacity: 0.8;
+      margin-bottom: 25px;
       font-size: 14px;
-      opacity: 0.7;
-      margin-bottom: 30px;
     }
 
     a.button {
       display: block;
       margin: 10px 0;
-      padding: 14px 18px;
-      background: #ffffff;
-      color: #000;
+      padding: 14px;
+      background: white;
+      color: black;
       text-decoration: none;
       border-radius: 12px;
       font-size: 16px;
-      font-weight: 500;
-    }
-
-    a.button:active {
-      transform: scale(0.98);
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Sunpark Grill Bar</h1>
-    <p>Банкетное меню</p>
+  <div class="overlay">
+    <div class="container">
+      <h1>San Park</h1>
+      <p>Menu</p>
 
-    <a class="button" href="menu.pdf" target="_blank">
-      Открыть меню
-    </a>
-
-    <a class="button" href="menu.pdf" download>
-      Скачать PDF
-    </a>
+      <a class="button" href="menu.pdf" target="_blank">Открыть меню</a>
+      <a class="button" href="menu.pdf" download>Скачать PDF</a>
+    </div>
   </div>
 </body>
 </html>
