@@ -1,30 +1,71 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Menu</title>
+  <title>San Park Menu</title>
 
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #0f0f10;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
 
-    iframe {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      border: none;
+    .container {
+      text-align: center;
+      padding: 20px;
+      max-width: 320px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.7;
+      margin-bottom: 30px;
+    }
+
+    a.button {
+      display: block;
+      margin: 10px 0;
+      padding: 14px 18px;
+      background: #ffffff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    a.button:active {
+      transform: scale(0.98);
     }
   </style>
 </head>
 
 <body>
-  <iframe src="menu.pdf"></iframe>
+  <div class="container">
+    <h1>San Park</h1>
+    <p>Digital menu</p>
+
+    <a class="button" href="menu.pdf" target="_blank">
+      Открыть меню
+    </a>
+
+    <a class="button" href="menu.pdf" download>
+      Скачать PDF
+    </a>
+  </div>
 </body>
 </html>
